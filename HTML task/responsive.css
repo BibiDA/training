@@ -1,0 +1,42 @@
+#para1 {
+width: 50%;
+background-color:blue;
+position: absolute;
+top: 0px;
+right: 50%;
+bottom: 50%;
+}
+#para2 {
+background-color:green;
+position: absolute;
+top: 50%;
+right: 50%;
+left: 0%;
+bottom: 0%;
+}
+
+#para3 {
+background-color:red;
+position: absolute;
+top: 0%;
+left: 50%;
+right: 0%;
+bottom: 50%;
+}
+#para4 {
+background-color:yellow;
+position: absolute;
+top: 50%;
+right: 0%;
+left: 50%;
+bottom: 0%;
+}
+#para5 {
+background-color:white;
+position: absolute;
+top: 25%;
+right: 25%;
+left: 25%;
+bottom:25%;
+}
+

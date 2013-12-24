@@ -1,0 +1,74 @@
+<html>
+  <head>
+     <link type="text/css" rel="stylesheet" href="calc.css" />
+    <title>Calculator</title>
+    <script type="text/javascript">
+    function doAction(value)
+    {
+	
+	document.getElementById("input").value+=value;
+    }
+    function doProcess()
+    {
+        document.getElementById("input").value=eval(document.getElementById("input").value);
+    }
+    function doClear()
+    {
+        document.getElementById("input").value="";
+    }
+    </script>
+  </head>
+  <body>
+
+<form>	
+
+<div id="box">
+<div style="text-align:center">
+  	<div id="field">
+	<p>
+	CALCULATOR<br />
+</p>	
+	<input style="text-align: right" id="input" name="input" type="text" value="" size="25" />
+	<br />
+	</div>
+	<div class="keys">
+        <p><br /><br /><br /><br /><br /><br /><input type="button" id="decisionclear" value="c" onclick="doClear()" class="button blue"/>	
+	<input type="button" id="decision*" value="%" onclick="doAction(this.value)" class="button blue" />
+	<input type="button" id="decision*" value="(" onclick="doAction(this.value)" class="button blue" />
+        <input type="button" id="decision/" value=")" onclick="doAction(this.value)" class="button blue" />
+	</p>
+	<p>
+        <input type="button" id="decision1" value="7" onclick="doAction(this.value)" class="button black" />
+        <input type="button" id="decision2" value="8" onclick="doAction(this.value)" class="button black" />
+	<input type="button" id="decision3" value="9" onclick="doAction(this.value)" class="button black" />
+	<input type="button" id="decision*" value="/" onclick="doAction(this.value)" class="button blue"/>
+	</p>
+	<p>        
+	<input type="button" id="decision4" value="4" onclick="doAction(this.value)" class="button black" />
+	<input type="button" id="decision5" value="5" onclick="doAction(this.value)" class="button black" />
+        <input type="button" id="decision6" value="6" onclick="doAction(this.value)" class="button black" />
+        <input type="button" id="decision-" value="*" onclick="doAction(this.value)"  class="button blue" />
+	</p>
+	<p>
+        <input type="button" id="decision8" value="1" onclick="doAction(this.value)" class="button black" />
+	<input type="button" id="decision9" value="2" onclick="doAction(this.value)" class="button black" />
+        <input type="button" id="decision0" value="3" onclick="doAction(this.value)" class="button black" />
+        <input type="button" id="decision-" value="+" onclick="doAction(this.value)" class="button blue" />
+	</p>
+	<p>
+	<input type="button" id="decision+" value="0" onclick="doAction(this.value)" class="button black" />
+	<input type="button" id="decision." value="." onclick="doAction(this.value)" class="button blue" />
+        <input type="button" id="decision-" value="-" onclick="doAction(this.value)" class="button blue" />
+        <input type="button" id="decision=" value="=" onclick="doProcess()" class="button yellow" />
+	</p>	
+ 	</div>
+	<br />
+
+        
+	
+  </form>
+</div>
+  </body>
+</html>
+ 
+
